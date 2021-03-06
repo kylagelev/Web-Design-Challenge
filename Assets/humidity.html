@@ -7,3 +7,34 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+  <div class="container">
+    <div class="col-md-12">
+      <h1>Latitude vs Humidity</h1>
+    </div>
+    <div class="row" id=humidity_html>
+      <div class="col-md-12" id=general_humidity>
+        <img src='../Visualizations/gen_graphs/lat_humidity_plot.png'>
+        <h3>General Latitude vs Humidity Graph</h3>
+      </div>
+      <div class="col-md-6" id=northern_humidity>
+        <img src='../Visualizations/northern_graphs/north_lat_humidity_plot.png'>
+        <h3>Northern Latitude vs Humidity Graph</h3>
+      </div>
+      <div class="col-md-6" id=southern_humidity>
+        <img src='../Visualizations/southern_graphs/south_lat_humidity_plot.png'>
+        <h3>Southern Latitude vs Humidity Graph</h3>
+      </div>
+    </div>
+  
+  <div class="row">
+    <div class="col-md-12" id=humidity_paragraph>
+      <br>
+      <p>
+        Visually, we see three graphs with two of them having linear regression lines as well. The first one shows the relationship between all latitudes and humidity (General Latitude vs Humidity Graph), the following one shows the relationship between Northern latitudes and humidity (Northern Latitude vs Humidity Graph), and the final one shows the relationship between Southern latitudes and humidity (Southern Latitude vs Humidity Graph).
+        Despite the weak positive correlation seen in both the Southern and Northern Hemisphere between latitude and humidity, it appears that in the Southern Hemisphere the humidity increases as latitude gets closer to zero/closer to the equator. 
+        This is a bit odd as the Northern Hemisphere displays that humidity actually increases farther from the equator.
+      </p>
+    </div>
+  </div>

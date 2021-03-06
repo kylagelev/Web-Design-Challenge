@@ -7,5 +7,36 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
-hi
+
+<body>
+  <div class="container">
+    <div class="col-md-12">
+      <h1>Latitude vs Temperature (in Fahrenheit)</h1>
+    </div>
+    <div class="row" id=temp_html>
+      <div class="col-md-12" id=general_temp>
+        <img src='../Visualizations/gen_graphs/lat_temp_plot.png'>
+        <h3>General Latitude vs Temperature Graph</h3>
+      </div>
+      <div class="col-md-6" id=northern_temp>
+        <img src='../Visualizations/northern_graphs/north_lat_temp_plot.png'>
+        <h3>Northern Latitude vs Temperature Graph</h3>
+      </div>
+      <div class="col-md-6" id=southern_temp>
+        <img src='../Visualizations/southern_graphs/south_lat_temp_plot.png'>
+        <h3>Southern Latitude vs Temperature Graph</h3>
+      </div>
+    </div>
+  
+  <div class="row">
+    <div class="col-md-12" id=temp_paragraph>
+      <br>
+      <p>
+        Visually, we see three graphs with two of them having linear regression lines as well. The first one shows the relationship between all latitudes and temperature (General Latitude vs Temperature Graph), the following one shows the relationship between Northern latitudes and temperature (Northern Latitude vs Temperature Graph), and the final one shows the relationship between Southern latitudes and temperature (Southern Latitude vs Temperature Graph).
+        It appears that in the Northern Hemisphere there is a negative correlation between Latitude and Max_Temp, implying that more Northern regions experience colder temperatures. 
+        Vice versa, we see that the Southern Hemisphere describes a positive weak correlation between latitude and max temp. 
+        However, it does appear that cities nearer the hemisphere experience higher temperatures than those farther away.
+      </p>
+    </div>
+  </div>
 
