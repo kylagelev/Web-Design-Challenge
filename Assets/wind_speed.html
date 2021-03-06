@@ -7,3 +7,35 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+  <div class="container">
+    <div class="col-md-12">
+      <h1>Latitude vs Wind Speed</h1>
+    </div>
+    <div class="row" id=wind_speed_html>
+      <div class="col-md-12" id=general_cloudiness>
+        <img src='../Visualizations/gen_graphs/lat_wind_speed_plot.png'>
+        <h3>General Latitude vs Wind Speed Graph</h3>
+      </div>
+      <div class="col-md-6" id=northern_wind_speed>
+        <img src='../Visualizations/northern_graphs/north_lat_wind_speed_plot.png'>
+        <h3>Northern Latitude vs Wind Speed Graph</h3>
+      </div>
+      <div class="col-md-6" id=southern_wind_speed>
+        <img src='../Visualizations/southern_graphs/south_lat_wind_speed_plot.png'>
+        <h3>Southern Latitude vs Wind Speed Graph</h3>
+      </div>
+    </div>
+  
+  <div class="row">
+    <div class="col-md-12" id=wind_speed_paragraph>
+      <br>
+      <p>
+        Visually, we see three graphs with two of them having linear regression lines as well. The first one shows the relationship between all latitudes and wind speed (General Latitude vs Wind Speed Graph), the following one shows the relationship between Northern latitudes and wind speed (Northern Latitude vs Wind Speed Graph), and the final one shows the relationship between Southern latitudes and wind speed (Southern Latitude vs Wind Speed Graph).
+        From these two scatterplots, it can be seen that there is little to no correlation between wind speed and latitude. 
+        Therefore, wind speed cannot be ultimately determined by the closer a city is to the equator. 
+        However, despite this evaluation, there is still a slight positive correlation in the Northern Hemisphere, while a slight negative correlation in the Southern Hemisphere, indicating that the farther away from the equator a city is, the wind speed may be slightly greater.
+      </p>
+    </div>
+  </div>
