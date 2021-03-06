@@ -9,21 +9,68 @@
 </head>
 
 <body>
-<h1 class=header1 id=landing_page_header>Take a look at what the <strong>Weather</strong> is going on!</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class=header1 id=landing_page_header>Take a look at what the <strong>Weather</strong> is going on!</h1>
+    </div>
+  </div>
 
-<p class=body id=landing_body> 
-  Drawing from an active weather API, a collection of 500 random cities has been compiled and analyzed to produce visualizations of certain weather conditions and the location (latitude) of these cities. 
-  These weather conditions include: general temperature (in Fahrenheit), humidity, cloudiness, and windspeed. 
-  Each respective city's latitude was plotted on the x-axis as the independent variable, while these weather conditions were plotted on the y-axis, the dependent variable.
-  The relationship between each condition and latitude was then analyzed.
-  Following a series of general plots for each weather condition and all latitudes, a series of plots were created using latitudes from the Northern and Southern Hemisphere, individually.
-  These were imperative in order to better analyze whether location has a correlation to these weather aspects.
-  Analysis is included for each graph on their respective page. 
+  <div class="row">
+    <div class="col-md-6">
+      <img src='Visualizations/gen_graphs/lat_temp_plot.png'>
+      <a href='#'> </a>
 
+    </div>
+    <div class="col-md-6">
+      <img src='Visualizations/gen_graphs/lat_humidity_plot.png'>
+      <a href='#'> </a>
+      
+    </div>
+    <div class="col-md-6">
+      <img src='Visualizations/gen_graphs/lat_cloudiness_plot.png'>
+      <a href='#'> </a>
+    </div>
 
-</p>
+    <div class="col-md-6">
+      <img src='Visualizations/gen_graphs/lat_wind_speed_plot.png'>
+      <a href='#'> </a>
+    </div>
 
-<h2 class=header2 id=landing_into>Dive into the Visualizations!</h2>
+    <div class="row">
+      <div class="col-md-12">
+          <p class=body id=landing_body> 
+          <br>
+          Drawing from an active weather API, a collection of 500 random cities has been compiled and analyzed to produce visualizations of certain weather conditions and the location (latitude) of these cities. 
+          These weather conditions include: general temperature (in Fahrenheit), humidity, cloudiness, and windspeed.
+          <br>
+          <br>
+          Using Matplotlib, each respective city's latitude was plotted on the x-axis as the independent variable, while these weather conditions were plotted on the y-axis, the dependent variable.
+          The relationship between each condition and latitude was then analyzed.
+          Following a series of general plots for each weather condition and all latitudes (as shown above), a series of plots were created using latitudes from the Northern and Southern Hemisphere, individually.
+          These were imperative in order to better analyze whether location has a correlation to these weather aspects.
+          Analysis is included for each graph on their respective page. 
+          </p> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12"> 
+        <h2 class=header2 id=landing_into>Dive into the Visualizations!</h2>
+
+    <div class="row">
+      <div class="col-md-12">
+        <img src=''> <a href='#'> </a>
+        <h3>Latitude vs. Temp</h3>
+        <div class="col-md-12">
+          <img src=''> <a href='#'> </a>
+          <h3>Latitude vs. Humidity</h3>
+          <div class="col-md-12">
+            <img src=''> <a href='#'> </a>
+            <h3>Latitude vs. Cloudiness</h3>
+            <div class="col-md-12">
+              <img src=''> <a href='#'> </a>
+              <h3>Latitude vs. Wind Speed</h3>
+        
 
 
 
