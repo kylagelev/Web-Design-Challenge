@@ -2,31 +2,36 @@ body {
     margin: 0;
     background-color:rgb(255, 255, 255);
     color:black;
-    width: 100%
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif
  }
 
  div.container2{
      color:white;
-     background-color:lightpink;
-     position:fixed; 
+     background-color:lightpink; 
+     position:absolute;
      left:80px; 
-     top:80px
+     top:80px;
+     font-family:Arial, Helvetica, sans-serif
      }
 
  div.container {
      background-color:rgb(255,255,255);
-     width: 500%
+     width: 500%;
+     font-family:Arial, Helvetica, sans-serif
  }
 nav.sidebar{
     height:300px;
-    top: 70px
+    top: 100px
 }
 
  nav.navbar {
     background-color:transparent;
     color:rgb(255, 255, 255);
     height: 100%;
-    position: relative;}
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif
+}
 
  nav {
     margin: 0;
@@ -36,6 +41,7 @@ nav.sidebar{
     position:fixed;
     height: 500px;
     overflow: auto;
+    font-family:Arial, Helvetica, sans-serif
  }
  nav a {
     display:block;
@@ -59,10 +65,11 @@ nav.sidebar{
  }
  div.content {
     margin-left: 300px;
-    padding: 0px 0px;
+    padding: 5px 0px;
     height: 100%;
     width: 300;
     background-color: white;
+    font-family:Arial, Helvetica, sans-serif
  }
  @media screen and (max-width: 950px) {
  nav {
@@ -145,42 +152,6 @@ nav.sidebar{
     display: block;
   }
 
-  @media (max-width: 700px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
-    }
-  }
  
  
  

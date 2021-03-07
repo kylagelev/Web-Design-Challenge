@@ -8,14 +8,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<div class="container">
+    <div class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="cities.html">Data</a>
+      <div class="dropdown">
+        <button class="dropbtn">All Plots
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="temp.html">Temperature</a>
+          <a href="humidity.html">Humidity</a>
+          <a href="cloudiness.html">Cloudiness</a>
+          <a href="wind_speed.html">Wind Speed</a>
+        </class>
+      </div>
+    </div>
+    <a href="comparing_figs.html">Comparing Plots</a>
+
 <body>
-    <div class="container">
+    <div class="content2">
+    <center>
       <div class="row" id=major_graphs>
         <div class="col-md-12">
+            <div id=title_major>
           <h1>Comparing Major Graphs</h1>
           <p>
               For more information on each individual graph, click on desired plot.
           </p>
+            </div>
         </div>
 
         <div class="col-md-6">
@@ -38,9 +59,11 @@
             <h3>General Latitude vs Wind Speed Graph</h3>
         </div>
     </div>
+</center>
     <br>
     <div class="row" id=major_graphs_paragraph>
-        <div class="col-md-12 id=graph_paragraphs">
+        <div class="col-md-12">
+            <div id=graph_paragraphs>
             <p> 
                 Based upon the above graphs, it appears that greatest relationship found is between latitude and maximum temperature. 
                 However, other graphs still leave ambiguity as to how latitude (distance from equator) affects humidity, cloudiness, and wind speed. 
@@ -49,5 +72,6 @@
                 Despite most of the greatest humidity being found around the equator (closer to 0 latitude), there was very low humidity slightly north of the equator. 
                 Based on this, it can further assessed what may cause the drop in humidity in these areas.
             </p>
+            </div>
         </div>
     </div>

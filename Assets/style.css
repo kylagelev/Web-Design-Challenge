@@ -1,12 +1,110 @@
+body {
+    margin: 5;
+    background-color:rgb(255, 255, 255);
+    color:black;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif
+ }
+
+ div.container2{
+     color:white;
+     background-color:lightpink; 
+     position: absolute;
+     left:80px; 
+     top:70px;
+     font-family:Arial, Helvetica, sans-serif
+     }
+
+div.content{
+    color: lightpink;
+}
+
+div.content2{
+    color:white;
+}
+
+#title_major{
+    background-color: lightpink;
+}
+
+#graph_paragraphs{
+    background-color: lightpink;
+}
+
+ div.container {
+     background-color:rgb(255,255,255);
+     width: 500%;
+     font-family:Arial, Helvetica, sans-serif
+ }
+nav.sidebar{
+    height:300px;
+    top: 500px;
+    position:relative
+}
+
+ nav.navbar {
+    background-color:transparent;
+    color:rgb(255, 255, 255);
+    height: 100%;
+    position:relative;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+ nav {
+    margin: 0;
+    padding: 4;
+    width: 300px;
+    background-color:lightsalmon;
+    position:fixed;
+    height: 500px;
+    overflow: auto;
+    font-family:Arial, Helvetica, sans-serif
+ }
+ nav a {
+    display:block;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration:cornsilk;
+    width: 300px;
+    margin: center
+ }
+ nav a.selected {
+    background-color:lightcoral;
+    color: rgb(255, 255, 255);
+    width: 300px
+ }
+ nav a:hover:not(.selected) {
+    background-color:lightpink;
+    color: cornsilk;
+    width: 150px
+ }
+ div.content {
+    margin-left: 300px;
+    padding: 5px 0px;
+    height: 100%;
+    width: 300;
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif
+ }
+ @media screen and (max-width: 950px) {
+ nav {
+    width: 100%;
+    height: auto;
+    position:relative;
+ }
+ nav a {float: left;}
+ div.content {margin: 0;
+    width:100%
+}
+ }
+
 /* Navbar container */
 .navbar {
     overflow: hidden;
     background-color:lightcoral;
     font-family: Arial;
-  }
-
-  div.content{
-      background-color: white;
   }
   
   /* Links inside the navbar */
@@ -16,7 +114,7 @@
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: cornsilk;
   }
   
   /* The dropdown container */
@@ -37,7 +135,6 @@
     margin: 0; /* Important for vertical align on mobile phones */
   }
   
-  /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color:lightpink;
   }
@@ -71,45 +168,4 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-  @media (max-width: 700px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
-    }
-}
-
-    nav a {float: left;}
-    div.content {margin: 0;
-   }
     

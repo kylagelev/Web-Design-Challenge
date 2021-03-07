@@ -8,9 +8,54 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<div class="container">
+  <div class="navbar">
+    <a href="../index.html">Home</a>
+    <a href="cities.html">Data</a>
+    <div class="dropdown">
+      <button class="dropbtn">All Plots
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="temp.html">Temperature</a>
+        <a href="humidity.html">Humidity</a>
+        <a href="cloudiness.html">Cloudiness</a>
+        <a href="wind_speed.html">Wind Speed</a>
+      </class>
+    </div>
+  </div>
+  <a href="comparing_figs.html">Comparing Plots</a>
+
 <body>
-  <div class="container">
+
+  <div class='container2'>
+    <div class='col-md-12'>
+      <p><strong><center>Dive into the Visualizations!</center></strong></p>
+    </div>
+  </div>
+    <nav class="sideBar">
+      <div class="col-md-6" id=temp_image>
+        <a href='Assets/temp.html'> <img src='../Visualizations/gen_graphs/lat_temp_plot.png' width="250" height="175"> 
+        Temperature </a>
+      </div>
+      <div class="col-md-6" id=hum_image>
+        <a href='Assets/humidity.html'> <img src='../Visualizations/gen_graphs/lat_humidity_plot.png' width="250" height="175">
+        Humidity </a> 
+      </div>
+      <div class="col-md-6" id=cloud_image>
+        <a href='Assets/cloudiness.html'> <img src='../Visualizations/gen_graphs/lat_cloudiness_plot.png' width="250" height="175">
+        Cloudiness </a>
+      </div>
+      <div class="col-md-6" id=wind_image>
+        <a href='Assets/wind_speed.html'> <img src='../Visualizations/gen_graphs/lat_wind_speed_plot.png' width="250" height="175">
+        Wind Speed </a>
+      </div>
+    </nav>
+
+  <div class="content">
+  <center>
     <div class="col-md-12">
+    
       <h1>Latitude vs Humidity</h1>
     </div>
     <div class="row" id=humidity_html>
@@ -27,7 +72,7 @@
         <h3>Southern Latitude vs Humidity Graph</h3>
       </div>
     </div>
-  
+  </center>
   <div class="row">
     <div class="col-md-12" id=humidity_paragraph>
       <br>
