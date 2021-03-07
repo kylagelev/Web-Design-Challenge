@@ -8,11 +8,28 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
-      <div class="container">
-        <div class="row">
+    <div class="container">
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">Data</a>
+        <div class="dropdown">
+          <button class="dropbtn">All Plots
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Temperature</a>
+            <a href="#">Humidity</a>
+            <a href="#">Cloudiness</a>
+            <a href="#">Wind Speed</a>
+          </class>
+        </div>
+      </div>
+      <a href="#news">Comparing Plots</a>
+      <div class="content">
           <div class="col-md-12">
-            <h1 class=cities_html id=cities_header1>City Data</h1>
+            <h1 class=cities_html id=cities_header1><center>City Data</center></h1>
                 <p>Below is the collection of over 500 random cities previously mentioned. 
                   City Data includes City_ID, City, Latitude (Lat), Longitude (Lng), Maximum Temperature (Max_Temp), Humidity (%), Cloudiness, Wind Speed (Wind_Speed), Country, and Date.
                 </p>
