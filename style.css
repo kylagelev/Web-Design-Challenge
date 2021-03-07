@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background-color:rgb(255, 255, 255);
+    color:black;
+ }
+
+ div.container = {
+     background-color:rgb(255,255,255)
+ }
+ nav {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color:lightsalmon;
+    position: fixed;
+    height: 300%;
+    overflow: auto;
+ }
+ nav a {
+    display:block;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration:cornsilk;
+    width: 300px;
+    margin: center;
+ }
+ nav a.selected {
+    background-color:lightcoral;
+    color: rgb(255, 255, 255);
+    width: 300px
+ }
+ nav a:hover:not(.selected) {
+    background-color:lightpink;
+    color: cornsilk;
+    width: 150px
+ }
+ div.content {
+    margin-left: 300px;
+    padding: 1px 16px;
+    height: 1000px;
+ }
+ @media screen and (max-width: 700px) {
+ nav {
+    width: 100%;
+    height: auto;
+    position:relative;
+ }
+ nav a {float: left;}
+ div.content {margin: 0;
+}
+ }

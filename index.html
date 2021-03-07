@@ -9,55 +9,106 @@
 </head>
 
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1 class=header1 id=landing_page_header>Take a look at what the <strong>Weather</strong> is going on!</h1>
-      <img class="col-md-12" id=weather_image src='Resources/weather.jpg' width=1000 height=300>
-    </div>
-  </div>
-
-    <div class="row">
-      <div class="col-md-12">
-          <p class=body id=landing_body> 
-          <br>
-          Drawing from an active weather API, a <a href = 'Assets/cities.html' target = '_blank'><strong> collection of over 500 random cities</strong></a> has been compiled and analyzed to produce visualizations of certain weather conditions and the location (latitude) of these cities. 
-          These weather conditions include: general temperature (in Fahrenheit), humidity, cloudiness, and windspeed.
-          <br>
-          <br>
-          Using Matplotlib, each respective city's latitude was plotted on the x-axis as the independent variable, while these weather conditions were plotted on the y-axis, the dependent variable.
-          The relationship between each condition and the city's latitude was then analyzed.
-          Following a series of general plots for each weather condition and all latitudes (as shown above), a series of plots were created using latitudes from the Northern and Southern Hemisphere, individually.
-          These were imperative in order to better analyze whether location has a correlation to these weather aspects.
-          Analysis is included for each type of graph on their respective page. 
-          Compare major graphs <a href = 'Assets/comparing_figs.html' target = '_blank'><strong>here</strong></a>.
-          </p> 
-      </div>
-    </div>
-
-    <div class="row" id=grouped_graphs>
-      <div class="col-md-12"> 
-        <h2 class=header2 id=landing_into>Dive into the Visualizations!</h2>
-
-    <div class="row">
-      <div class="col-md-6" id=temp_image>
-        <a href='Assets/temp.html' target = '_blank'> <img src='Visualizations/gen_graphs/lat_temp_plot.png' width="400" height="275"> </a>
-        <h4>Latitude vs. Temperature</h4>
-      </div>
-      <div class="col-md-6" id=hum_image>
-        <a href='Assets/humidity.html' target = '_blank'> <img src='Visualizations/gen_graphs/lat_humidity_plot.png' width="400" height="275"> </a>
-        <h4>Latitude vs. Humidity</h4>
-      </div>
-      <div class="col-md-6" id=cloud_image>
-        <a href='Assets/cloudiness.html' target = '_blank'> <img src='Visualizations/gen_graphs/lat_cloudiness_plot.png' width="400" height="275"> </a>
-        <h4>Latitude vs. Cloudiness</h4>
-      </div>
-      <div class="col-md-6" id=wind_image>
-        <a href='Assets/wind_speed.html' target = '_blank'> <img src='Visualizations/gen_graphs/lat_wind_speed_plot.png' width="400" height="275"> </a>
-        <h4>Latitude vs. Wind Speed</h4>
-      </div>
-    </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href='index.html'>Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   
-</body>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-</html>
+  <nav class="sideBar">
+    <div class="col-md-3" id=temp_image>
+      <a href='Assets/temp.html'> <img src='Visualizations/gen_graphs/lat_temp_plot.png' width="250" height="175"> 
+      Temperature </a>
+    </div>
+    <div class="col-md-3" id=hum_image>
+      <a href='Assets/humidity.html'> <img src='Visualizations/gen_graphs/lat_humidity_plot.png' width="250" height="175">
+      Humidity </a> 
+    </div>
+    <div class="col-md-3" id=cloud_image>
+      <a href='Assets/cloudiness.html'> <img src='Visualizations/gen_graphs/lat_cloudiness_plot.png' width="250" height="175">
+      Cloudiness </a>
+    </div>
+    <div class="col-md-3" id=wind_image>
+      <a href='Assets/wind_speed.html'> <img src='Visualizations/gen_graphs/lat_wind_speed_plot.png' width="250" height="175">
+      Wind Speed </a>
+      <br>
+      <br>
+    </div>
+  </nav>
+
+    <div class="content">
+      <div class='container'></div>
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class=header1 id=landing_page_header>Take a look at what the <strong>Weather</strong> is going on!</h1>
+          <img class="col-md-12" id=weather_image src='Resources/weather.jpg' width=1000 height=300>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-12">
+              <p class=body id=landing_body> 
+              <br>
+              Drawing from an active weather API, a <a href = 'Assets/cities.html' target = '_blank'><strong> collection of over 500 random cities</strong></a> has been compiled and analyzed to produce visualizations of certain weather conditions and the location (latitude) of these cities. 
+              These weather conditions include: general temperature (in Fahrenheit), humidity, cloudiness, and windspeed.
+              <br>
+              <br>
+              Using Matplotlib, each respective city's latitude was plotted on the x-axis as the independent variable, while these weather conditions were plotted on the y-axis, the dependent variable.
+              The relationship between each condition and the city's latitude was then analyzed.
+              Following a series of general plots for each weather condition and all latitudes (as shown above), a series of plots were created using latitudes from the Northern and Southern Hemisphere, individually.
+              These were imperative in order to better analyze whether location has a correlation to these weather aspects.
+              Analysis is included for each type of graph on their respective page. 
+              Compare major graphs <a href = 'Assets/comparing_figs.html' target = '_blank'><strong>here</strong></a>.
+              </p> 
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6" id=temp_image>
+            <a href='Assets/temp.html' target = '_blank'> <img src='Visualizations/gen_graphs/lat_temp_plot.png' width="400" height="275"> </a>
+            <h4>Latitude vs. Temperature</h4>
+          </div>
+          <div class="col-md-6" id=hum_image>
+            <a href='Assets/humidity.html' target = '_blank'> <img src='Visualizations/gen_graphs/lat_humidity_plot.png' width="400" height="275"> </a>
+            <h4>Latitude vs. Humidity</h4>
+          </div>
+          <div class="col-md-6" id=cloud_image>
+            <a href='Assets/cloudiness.html' target = '_blank'> <img src='Visualizations/gen_graphs/lat_cloudiness_plot.png' width="400" height="275"> </a>
+            <h4>Latitude vs. Cloudiness</h4>
+          </div>
+          <div class="col-md-6" id=wind_image>
+            <a href='Assets/wind_speed.html' target = '_blank'> <img src='Visualizations/gen_graphs/lat_wind_speed_plot.png' width="400" height="275"> </a>
+            <h4>Latitude vs. Wind Speed</h4>
+          </div>
+        </div>
+      </div>
+        
+    </body>
+
+    </html>
