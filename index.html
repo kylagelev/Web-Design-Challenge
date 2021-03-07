@@ -10,36 +10,42 @@
 
 <div class="container">
   <div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">Data</a>
+    <a href="index.html">Home</a>
+    <a href="Assets/cities.html">Data</a>
     <div class="dropdown">
       <button class="dropbtn">All Plots
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Temperature</a>
-        <a href="#">Humidity</a>
-        <a href="#">Cloudiness</a>
-        <a href="#">Wind Speed</a>
+        <a href="Assets/temp.html">Temperature</a>
+        <a href="Assets/humidity.html">Humidity</a>
+        <a href="Assets/cloudiness.html">Cloudiness</a>
+        <a href="Assets/wind_speed.html">Wind Speed</a>
       </class>
     </div>
   </div>
-  <a href="#news">Comparing Plots</a>
+  <a href="Assets/comparing_figs.html">Comparing Plots</a>
 
+  <body>
+    <div class='container2'>
+      <div class='col-md-12'>
+        <p><strong><center>Dive into the Visualizations!</center></strong></p>
+      </div>
+    </div>
       <nav class="sideBar">
-        <div class="col-md-2" id=temp_image>
+        <div class="col-md-6" id=temp_image>
           <a href='Assets/temp.html'> <img src='Visualizations/gen_graphs/lat_temp_plot.png' width="250" height="175"> 
           Temperature </a>
         </div>
-        <div class="col-md-2" id=hum_image>
+        <div class="col-md-6" id=hum_image>
           <a href='Assets/humidity.html'> <img src='Visualizations/gen_graphs/lat_humidity_plot.png' width="250" height="175">
           Humidity </a> 
         </div>
-        <div class="col-md-2" id=cloud_image>
+        <div class="col-md-6" id=cloud_image>
           <a href='Assets/cloudiness.html'> <img src='Visualizations/gen_graphs/lat_cloudiness_plot.png' width="250" height="175">
           Cloudiness </a>
         </div>
-        <div class="col-md-2" id=wind_image>
+        <div class="col-md-6" id=wind_image>
           <a href='Assets/wind_speed.html'> <img src='Visualizations/gen_graphs/lat_wind_speed_plot.png' width="250" height="175">
           Wind Speed </a>
         </div>
@@ -63,8 +69,7 @@
               The relationship between each condition and the city's latitude was then analyzed.
               Following a series of general plots for each weather condition and all latitudes (as shown above), a series of plots were created using latitudes from the Northern and Southern Hemisphere, individually.
               These were imperative in order to better analyze whether location has a correlation to these weather aspects.
-              Analysis is included for each type of graph on their respective page. 
-              Compare major graphs <a href = 'Assets/comparing_figs.html' target = '_blank'><strong>here</strong></a>.
+              Analysis is included for each type of graph on their respective page.
               </p> 
           </div>
         </div>

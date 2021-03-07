@@ -2,16 +2,30 @@ body {
     margin: 0;
     background-color:rgb(255, 255, 255);
     color:black;
+    width: 100%
  }
+
+ div.container2{
+     color:white;
+     background-color:lightpink;
+     position:fixed; 
+     left:80px; 
+     top:80px
+     }
 
  div.container {
      background-color:rgb(255,255,255);
-     height:100px
+     width: 500%
  }
+nav.sidebar{
+    height:300px;
+    top: 70px
+}
 
  nav.navbar {
     background-color:transparent;
     color:rgb(255, 255, 255);
+    height: 100%;
     position: relative;}
 
  nav {
@@ -20,7 +34,7 @@ body {
     width: 300px;
     background-color:lightsalmon;
     position:fixed;
-    height: 100%;
+    height: 500px;
     overflow: auto;
  }
  nav a {
@@ -45,12 +59,12 @@ body {
  }
  div.content {
     margin-left: 300px;
-    padding: 1px 16px;
+    padding: 0px 0px;
     height: 100%;
     width: 300;
     background-color: white;
  }
- @media screen and (max-width: 900px) {
+ @media screen and (max-width: 950px) {
  nav {
     width: 100%;
     height: auto;
@@ -58,6 +72,7 @@ body {
  }
  nav a {float: left;}
  div.content {margin: 0;
+    width:100%
 }
  }
 
@@ -96,7 +111,6 @@ body {
     margin: 0; /* Important for vertical align on mobile phones */
   }
   
-  /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color:lightpink;
   }
@@ -167,5 +181,6 @@ body {
         display:block !important;
     }
   }
+ 
  
  
