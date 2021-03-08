@@ -177,7 +177,8 @@ nav.sidebar{
      height: auto;
      position:relative;
   }
-  nav a {float: middle
+  nav a {
+    float: middle
  }
  
   div.content {
@@ -186,14 +187,18 @@ nav.sidebar{
  }
 
  div.dropdown{
-  margin-left:auto;
-  margin-right:auto
+    margin-left:auto;
+    margin-right:auto
  }
  
  div.side_container {
   
 
  }
+
+ nav.sideBar{
+
+}
  
  .navbar a {
    float: none;
@@ -201,16 +206,11 @@ nav.sidebar{
  }
  
  div.container2{
-   display:none
- }
- 
- nav.sideBar{
-   bottom:0px;
-   position: absolute
+  display:none
  }
 
  div.content2{
-   width:100%
+  width:100%
  }
  
   }
