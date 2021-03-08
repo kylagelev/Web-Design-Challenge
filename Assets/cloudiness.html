@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <div class="container">
   <div class="navbar">
     <a href="../index.html">Home</a>
@@ -32,6 +33,7 @@
       <p><strong><center>Dive into the Visualizations!</center></strong></p>
     </div>
   </div>
+  <div class="side_container">
     <nav class="sideBar">
       <div class="col-md-6" id=temp_image>
         <a href='Assets/temp.html'> <img src='../Visualizations/gen_graphs/lat_temp_plot.png' width="250" height="175"> 
@@ -50,7 +52,8 @@
         Wind Speed </a>
       </div>
     </nav>
-
+  </div>
+  
   <div class="content">
     <center>
     <div class="col-md-12">
@@ -61,11 +64,11 @@
         <img src='../Visualizations/gen_graphs/lat_cloudiness_plot.png'>
         <h3>General Latitude vs Cloudiness Graph</h3>
       </div>
-      <div class="col-md-6" id=northern_cloudiness>
+      <div class="col-md-12" id=northern_cloudiness>
         <img src='../Visualizations/northern_graphs/north_lat_cloudiness_plot.png'>
         <h3>Northern Latitude vs Cloudiness Graph</h3>
       </div>
-      <div class="col-md-6" id=southern_cloudiness>
+      <div class="col-md-12" id=southern_cloudiness>
         <img src='../Visualizations/southern_graphs/south_lat_cloudiness_plot.png'>
         <h3>Southern Latitude vs Cloudiness Graph</h3>
       </div>
@@ -82,3 +85,5 @@
       </p>
     </div>
   </div>
+</body>
+</html>
