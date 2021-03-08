@@ -20,9 +20,19 @@ body {
      width: 500%;
      font-family:Arial, Helvetica, sans-serif
  }
-nav.sidebar{
-    height:300px;
-    top: 100px
+
+ nav.sidebar{
+  height:300px;
+  top: 10px;
+  position:fixed
+}
+
+
+div.side_container{
+  left:10px; 
+   top:150px;
+   position:absolute;
+   width: 50%
 }
 
  nav.navbar {
@@ -70,17 +80,6 @@ nav.sidebar{
     width: 300;
     background-color: white;
     font-family:Arial, Helvetica, sans-serif
- }
- @media screen and (max-width: 950px) {
- nav {
-    width: 100%;
-    height: auto;
-    position:relative;
- }
- nav a {float: left;}
- div.content {margin: 0;
-    width:100%
-}
  }
 
 /* Navbar container */
@@ -151,6 +150,59 @@ nav.sidebar{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  @media screen and (max-width: 950px) {
+    nav {
+       width: 100%;
+       height: auto;
+       position:relative;
+    }
+    nav a {
+      float: middle
+   }
+   
+    div.content {
+       margin:0;
+       width:100%;
+   }
+  
+   div.dropdown{
+      margin-left:auto;
+      margin-right:auto
+   }
+   
+   div.side_container {
+    position: relative;
+    top: 5px;
+    width:100%;
+    height:75%;
+    margin-left:auto;
+    margin-right:auto
+   }
+  
+   .navbar a {
+     float: none;
+     width: 100%;
+   }
+   
+   div.container2{
+    display:none
+   }
+  
+   div.content2{
+    width:100%;
+    display: flex
+   }
+  
+   #cities_table{
+   overflow-x: scroll;
+   width:100%
+   
+   }
+  
+   
+    }
+  
 
  
  

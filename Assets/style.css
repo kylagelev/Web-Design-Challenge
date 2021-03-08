@@ -16,7 +16,7 @@ body {
      background-color:lightpink; 
      position: absolute;
      left:80px; 
-     top:70px;
+     top:80px;
      font-family:Arial, Helvetica, sans-serif
      }
 
@@ -201,8 +201,6 @@ nav.sidebar{
   margin-right:auto
  }
 
-
- 
  .navbar a {
    float: none;
    width: 100%;
@@ -217,8 +215,11 @@ nav.sidebar{
   display: flex
  }
 
+ #cities_table{
+ overflow-x: scroll;
+ width:100%
  
-
+ }
 
  
   }
